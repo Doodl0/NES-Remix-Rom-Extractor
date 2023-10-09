@@ -132,13 +132,15 @@ for i in range (len(romnames)):
     if i == 2 or i == 21 or i == 22 or i == 41 or i == 43 or i == 45:
         try:
             fdsfix(romnames[i], romdata[romnames[i]])
-            print("Extracted "+romdata[romnames[i]])
         except:
             print("Couldn't find "+romnames[i])
+        else:
+            print("Extracted "+romdata[romnames[i]])
     else:
         try:
             nesfix(romnames[i], romdata[romnames[i]])
-            print("Extracted "+romdata[romnames[i]])
         except:
             print("Couldn't find "+romnames[i])
+        else:
+            print("Extracted "+romdata[romnames[i]])
 
