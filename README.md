@@ -8,6 +8,8 @@ If you have tested this on other versions, please let me know.
 Simply place the Python file in #\content\emu\rom (# being the directory to your dump of the game, e.g. "mlc01\usr\title\00050000\10146100").
 Then run the file with Python, and a folder called "roms" should be generated, with the fixed roms inside.
 
+If you are using an emulator that requires iNES headers, you will need a tool to add them. I would recommend you use <a href="https://github.com/Kitrinx/NES_Header_Repair">NES Header Repair by Kitrinx<a>. For this specific tool, you will need to download <a href="https://forums.nesdev.org/viewtopic.php?f=3&t=19940">this database<a>, which is also linked in the repo, and the nes_header_repair.py file from the repo. Place them in the same folder as the NES Remix Rom Extractor file. You will need to open up nes_header_repair.py file in a text editor or IDE, and scroll to line 19. You should see `TRIAL_RUN = 1`. Just change the 1 to a 0, save the file and close it. Then run it in Python and all the .nes roms should have headers added.
+
 # Roms
 ## Note: 
 Famicom Disk System games are in a .qd format, which won't be read by most emulators. You can convert them to .fds with a tool like  <a href="https://gist.github.com/einstein95/6545066905680466cdf200c4cc8ca4f0">qd2fds.py<a>, which you use by placing it in the same directory as the .qd files, opening the command line there and typing `python qd2fds.py <ROM>`. You can also do `python qd2fds.py -h` to read all options.
