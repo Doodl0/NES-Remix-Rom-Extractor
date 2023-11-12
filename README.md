@@ -107,3 +107,6 @@ Zelda II - The Adventure of Link (USA).nes
 Zelda no Densetsu - The Hyrule Fantasy (Japan) (Collector's Edition).qd
 Zelda no Densetsu 1 - The Hyrule Fantasy (Japan).nes
 ```
+
+## Credits and Acknowledgements
+<a href="https://github.com/Kitrinx">Kitrinx<a> - All of the code for adding NES 2.0 Headers from their script <a href="https://github.com/Kitrinx/NES_Header_Repair">NES Header Repair<a>
