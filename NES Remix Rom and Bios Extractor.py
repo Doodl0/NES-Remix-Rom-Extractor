@@ -1,4 +1,9 @@
+import xml.etree.ElementTree as ET
+import hashlib
 import os
+import errno
+from math import log
+from math import pow
 
 newpath = r"./roms" 
 if not os.path.exists(newpath):
@@ -211,14 +216,6 @@ VERBOSITY = 3
 
 
 ##### BELOW HERE IS CODE #####
-
-
-import xml.etree.ElementTree as ET
-import hashlib
-import os
-import errno
-from math import log
-from math import pow
 
 def print_log(message, level):
 	if (level <= VERBOSITY):

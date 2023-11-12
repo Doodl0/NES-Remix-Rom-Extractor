@@ -25,4 +25,9 @@ def fdsbiosfix(x,y):
     with open("bios/"+y, 'wb') as f: 
         f.write(data)
 
-fdsbiosfix("WUP-FBAJ.bin", "disksys.rom")             
+try: 
+    fdsbiosfix("WUP-FBAJ.bin", "disksys.rom")
+except:
+    print("Couldn't find WUP-FBAJ.bin") 
+else:
+    print("Extracted disksys.rom") 
