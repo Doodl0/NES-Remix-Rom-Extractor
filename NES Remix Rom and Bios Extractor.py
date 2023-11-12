@@ -602,10 +602,11 @@ def walk_dirs(rom_headers, start_path):
 				process_fds(root, file)
 
 ### Main ###
-
-print_log('Reading XML, please wait...', 2)
-rom_headers = populate_dict(NES_20) #populate with argument 0 for iNES 1.0 headers
-print_log('Evaluating files...', 2)
-walk_dirs(rom_headers, START_PATH)
-print_log('\n\nProcessing complete.' +
-	(' This has been a trial run. See the top of the script to change options.' if TRIAL_RUN else ''), 2)
+try:
+	print_log('Reading XML, please wait...', 2)
+	rom_headers = populate_dict(NES_20) #populate with argument 0 for iNES 1.0 headers
+	print_log('Evaluating files...', 2)
+	walk_dirs(rom_headers, START_PATH)
+	print_log('\n\nProcessing complete.' + (' This has been a trial run. See the top of the script to change options.' if TRIAL_RUN else ''), 2)
+except:
+	print("Could not add NES 2.0 headers")
