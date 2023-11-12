@@ -6,7 +6,7 @@ If you have tested this on other versions, please let me know.
 
 # Usage
 Simply place any of the 3 Python files in #\content\emu\rom (# being the directory to your dump of the game, e.g. "mlc01\usr\title\00050000\10146100").
-Then run the file with Python, and a folder called "roms" should be generated, with the fixed roms inside.
+Then run the file with Python, and a folder called "roms", "bios" or both should be generated (depending on which script you chose), with the fixed roms inside.
 
 If you are using an emulator that requires iNES headers, you will need to download <a href="https://forums.nesdev.org/viewtopic.php?f=3&t=19940">this database<a>. Place it in the same folder as the Python file and run it in Python and all the .nes roms should have headers added.
 
