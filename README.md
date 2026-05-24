@@ -2,7 +2,7 @@
 A simple Python script to extract the roms from NES Remix and NES Remix 2
 The script just removes the custom header and footer of the rom to make them playable, then adds an NES 2.0 header if the database file is added
 I have only tested this on the European versions and I have not tested NES Remix Pack.
-If you have tested this on other versions, please let me know.
+EDIT: Has been tested with the US versions thanks to jbmanlol
 
 # Usage
 Simply place any of the 3 Python files in #\content\emu\rom (# being the directory to your dump of the game, e.g. "mlc01\usr\title\00050000\10146100").
